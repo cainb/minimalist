@@ -4,4 +4,5 @@
 
 ### 依赖
 
-1. [Font Awesome Free 5.15.1](https://fontawesome.com)
+1. [jQuery v3.4.1](https://jquery.com)
+2. [Font Awesome Free 5.15.1](https://fontawesome.com)

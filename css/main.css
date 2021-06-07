@@ -53,7 +53,6 @@ body {
 
 .card .logo {
     padding: 20px 0px 0px 0px;
-    
 }
 
 .card .logo img{
@@ -67,10 +66,64 @@ body {
     font-size: 1.5rem;
 }
 
+/* 信息卡片 - 信息卡片切换按钮 */
+
+.card .card-button {
+    width: 72px;
+    height: 72px;
+    border-radius: 100px;
+    padding: 20px 0px 0px 0px;
+    cursor: pointer;
+}
+
+.card .card-button .card-button-line {
+    width: 360px;
+    height: 0px;
+    margin: auto;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid #000000;
+}
+
+.card .card-button .card-button-box {
+    width: 64px;
+    height: 64px;
+    margin: auto;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 100px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-button .card-button-box i {
+    width: 64px;
+    height: 64px;
+    border: 1px solid #9b9b9b;
+    background-color: #ffffff;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+}
+
+.card-button .card-button-box i:hover {
+    transform:rotate(360deg);
+}
+
 /* 信息卡片 - 常用站点 */
 
 .website {
-    margin: 40px 0px;
+    padding: 0px 0px 0px 0px;
     display: flex;
     justify-content: center;
 }
@@ -112,4 +165,289 @@ body {
     text-align: center;
     font-size: 1rem;
     color: #555555;
+}
+
+/* 搜索卡片 */
+
+.card-search {
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 时间与日期 */
+
+.card-search .time-date {
+    height: 100px;
+    text-align: center;
+}
+
+/* 时间与日期 - 获取时间 */
+
+.card-search .time-date .time {
+    padding: 100px 0px 0px 0px;
+    font-size: 8rem;
+}
+
+/* 时间与日期 - 获取日期 */
+
+.card-search .time-date .date {
+    font-size: 1.5rem;
+}
+
+/* 聚合搜索 */
+.card-search .search-box {
+    position: relative;
+    padding: 150px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-search .search-box form {
+    width: 360px;
+    height: 50px;
+    display: block;
+    margin: 10px auto 9px;
+    position: relative;
+    border-radius: 40px;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-box form .se {
+    width: 40px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    left: 6px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #777;
+}
+
+.search-box form .se:hover {
+    filter: alpha(Opacity=70);
+    opacity: 0.7;
+}
+
+.search-box form .wd {
+    width: 260px;
+    height: 46px;
+    display: block;
+    position: absolute;
+    left: 54px;
+    border: 1px solid #eeeeee;
+    border-radius: 8px;
+    line-height: 100%;
+    text-indent: 8px;
+    font-size: 24px;
+    color: #555555;
+}
+
+.search-box form .wd:focus {
+    background: #e7e6e6;
+    border-color: #fff;
+}
+
+.search-box form .s {
+    width: 30px;
+    height: 40px;
+    display: block;
+    position: absolute;
+    z-index: 0;
+    right: 12px;
+    top: 6px;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #777;
+}
+/* 聚合搜索菜单列表 */
+.card-search .search-engine {
+    position: absolute;
+    top: 100%;
+    left: 32px;
+    width: 300px;
+    height: 143px;
+    background: #eeeeee;
+    padding: 15px 0px 0px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px 0px #d8d7d7;
+    transition: all 0.3s;
+    display: none;
+    z-index: 999;
+    overflow: auto;
+}
+
+/* 聚合搜索菜单列表滚动条 */
+/*滚动条整体样式*/
+.card-search .search-engine::-webkit-scrollbar {
+    width: 8px; /*高宽分别对应横竖滚动条的尺寸*/
+    /* display:none; */ /* 隐藏滚动条  */
+}
+/*滚动条里面小方块*/
+.card-search .search-engine::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: #e7e6e6;
+}
+/*滚动条里面轨道*/
+.card-search .search-engine::-webkit-scrollbar-track {
+    background: #dadada;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.card-search .search-engine .search-engine-head {
+    overflow: hidden;
+    text-indent: 20px;
+    margin-bottom: 10px;
+    padding-right: 15px;
+}
+
+.search-engine .search-engine-head .search-engine-tit {
+    float: left;
+    margin: 0;
+    font-size: 14px;
+    color: #999;
+}
+
+.card-search .search-engine ul {
+    padding: 0;
+    height: 40px;
+    margin: 0 auto;
+    justify-content: left;
+}
+/* 下拉框小箭头
+.card-search .search-engine ul::before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    border-top: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #fff;
+    border-left: 8px solid transparent;
+}
+
+.card-search .search-engine .search-engine-list::after {
+    content: '';
+    width: 70px;
+    height: 18px;
+    position: absolute;
+    top: -17px;
+    left: 1px;
+}
+*/
+.search-engine .search-engine-list li {
+    float: left;
+    width: 108px;
+    height: 40px;
+    line-height: 35px;
+    text-align: left;
+    font-size: 14px;
+    left: 15px;
+    padding: 5px 10px 5px 10px;
+    margin: 0 10px 10px 0;
+    background: #e7e6e6;
+    color: #555555;
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    border-radius: 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.search-engine-list li img {
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    float: left;
+    margin-right: 5px;
+    margin-top: 2.5px;
+}
+
+.search,
+.wd,
+.s {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: none;
+}
+/* 搜索框中的背景字体 */
+.wd::-webkit-input-placeholder {
+    color: #555555;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+ul,
+li {
+    display: block;
+    list-style: none;
+}
+
+/* 一言句子 */
+
+.card-search .hitokoto-box {
+    width: 350px;
+    padding: 20px 0px 0px 0px;
+    color: #555555;
+}
+
+/* 一言句子正文 */
+.card-search .hitokoto-box .hitokoto {
+    text-align: left;
+    font-size: 1.6rem;
+}
+
+/* 一言句子加载失败提示 */
+.card-search .hitokoto-box .hitokoto p {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+/* 一言句子作者与出处 */
+.card-search .hitokoto-box .hitofrom {
+    text-align: right;
+    font-size: 1.2rem;
+}
+
+/* 搜索卡片切换按钮 */
+
+.card-search .card-search-button {
+    width: 72px;
+    height: 72px;
+    border-radius: 100px;
+    padding: 60px 0px 0px 0px;
+    cursor: pointer;
+}
+
+.card-search .card-search-button i {
+    transition: all .8s;
+}
+
+.card-search .card-search-button i:hover {
+    transform:rotate(360deg);
 }

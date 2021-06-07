@@ -24,12 +24,13 @@
 		<link rel="stylesheet" href="css/color.css">
         <link rel="stylesheet" href="css/main.css">
 		<!-- 引入 js -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/data.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 		<!-- 引入字体图标 -->
 		<link rel="stylesheet" href="font/css/all.min.css">
     </head>
-    <body>
+    <body onLoad="getTime()">
 		<!-- 信息卡片 -->
 		<div class="card">
 			<!-- 头像 -->
@@ -44,6 +45,16 @@
 			<div class="signature">
 				<p>永远保持理智选择和接受坏事的是心态</p>
 			</div>
+			<!-- 信息卡片切换按钮 -->
+			<div class="card-button">
+				<div class="card-button-line"></div>
+				<div class="card-button-box">
+					<i class="fas fa-search fa-3x"></i>
+				</div>
+				
+				
+				
+			</div>
 			<!-- 常用站点 -->
 			<div class="website">
 				<!-- 站点盒子 -->
@@ -54,6 +65,52 @@
 					<p>Minimalist</p>
 				</div>
 			</div>
+			
+		</div>
+		<!-- 搜索卡片 -->
+		<div class="card-search">
+			<!-- 时间与日期 -->
+			<div class="time-date">
+				<!-- 获取时间 -->
+				<div class="time" id="time"></div>
+				<!-- 获取日期 -->
+				<div class="date" id="date"></div>
+			</div>
+			<!-- 聚合搜索 -->
+			<div class="search-box" id="search">
+				<form class="search" action="https://cn.bing.com/search" target="_blank">
+					<img class="se" src="./img/bing.png">
+					<input class="wd" type="text" name="q" placeholder="快来搜一下吧 ^-^">
+					<button class="s">
+						<i class="fas fa-search"></i>
+					</button>
+				</form>
+				<div class="search-engine" style="display: none">
+					<div class="search-engine-head">
+						<strong class="search-engine-tit">选择搜索引擎：</strong>
+					</div>
+					<ul class="search-engine-list">
+						<li class="se-li" url="https://cn.bing.com/search" name="q" img="./img/bing.png"><img src="./img/bing.png" />必应</li>
+						<li class="se-li" url="https://www.google.com/search" name="q" img="./img/google.png"><img src="./img/google.png" />谷歌</li>
+						<li class="se-li" url="https://www.baidu.com/s" name="wd" img="./img/baidu.png"><img src="./img/baidu.png" />百度</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 一言句子 -->
+			<div class="hitokoto-box">
+				<!-- 一言句子正文 -->
+				<div class="hitokoto" id="hitokoto">
+					<!-- 一言语句加载失败提示 -->
+					<p>呀！我怎么没加载出来！！！快刷新一下吧 QAQ</p>
+				</div>
+				<br>
+				<!-- 一言句子作者与出处 -->
+				<div class="hitofrom" id="hitofrom"></div>
+			</div>
+			<!-- 搜索卡片切换按钮 -->
+			<div class="card-search-button">
+				<i class="fas fa-times-circle fa-6x"></i>
+			</div>	
 		</div>
     </body>
 </html>

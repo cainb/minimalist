@@ -190,6 +190,13 @@ body {
     display: none;
     flex-direction: column;
     align-items: center;
+    animation: card-search-animation .5s ease-out;
+}
+
+@keyframes card-search-animation {
+    0% {
+        transform: scale(0);
+    }
 }
 
 /* 时间与日期 */

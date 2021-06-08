@@ -1,1 +1,78 @@
 /* Copyright © 2021 Cai Hai. All Rights Reserved. */
+
+/* 全局颜色管理 */
+
+:root {
+    /* 页面背景 */
+    --body-background-color: #fff;
+    /* 信息卡片背景 */
+    --card-background-color: #fff;
+    /* 信息卡片阴影 */
+    --card-box-shadow: #d7d7d7;
+    /* 信息卡片 - 头像背景 */
+    --avatar-background-color: #fff;
+    /* 信息卡片 - 头像边框 */
+    --avatar-border: #d4d4d4;
+    /* 信息卡片 - 图标背景 */
+    --logo-background-color: #fff;
+    /* 信息卡片 - 个性签名文本 */
+    --signature-color: #000;
+    /* 信息卡片 - 信息卡片切换按钮分隔线 */
+    --card-button-line-border: #000;
+    /* 信息卡片 - 信息卡片切换按钮边框 */
+    --card-button-box-i-border: #9b9b9b;
+    /* 信息卡片 - 信息卡片切换按钮图标 */
+    --card-button-box-i-color: #000;
+    /* 信息卡片 - 信息卡片切换按钮背景 */
+    --card-button-box-i-background-color: #fff;
+    /* 信息卡片 - 常用站点盒子背景 */
+    --website-box-a-background-color: #f0f0f0;
+    /* 信息卡片 - 常用站点盒子图标 */
+    --website-box-a-color: #555;
+    /* 信息卡片 - 常用站点盒子阴影 */
+    --website-box-a-box-shadow: #ffffff6b;
+    /* 信息卡片 - 常用站点盒子触摸阴影 */
+    --website-box-a-hover-box-shadow: #5f22222c;
+    /* 信息卡片 - 常用站点盒子文本 */
+    --website-box-p-color: #555;
+    /* 搜索卡片背景 */
+    --card-search-background-color: #fff;
+    /* 搜索卡片 - 时间与日期文本 */
+    --time-date-color: #000;
+    /* 搜索卡片 - 聚合搜索背景 */
+    --search-box-form-background-color: #eee;
+    /* 搜索卡片 - 聚合搜索边框 */
+    --search-box-form-border: #eee;
+    /* 搜索卡片 - 聚合搜索搜索框输入文本 */
+    --search-box-form-wd-color: #555;
+    /* 搜索卡片 - 聚合搜索搜索框背景文本 */
+    --search-box-form-wd-webkit-input-placeholder-color: #555;
+    /* 搜索卡片 - 聚合搜索搜索框边框 */
+    --search-box-form-wd-border: #eee;
+    /* 搜索卡片 - 聚合搜索搜索框背景 */
+    --search-box-form-wd-focus-background-color: #e7e6e6;
+    /* 搜索卡片 - 聚合搜索搜索框边框 */
+    --search-box-form-wd-focus-border-color: #fff;
+    /* 搜索卡片 - 聚合搜索搜索按钮图标 */
+    --search-box-form-s-color: #777;
+    /* 搜索卡片 - 聚合搜索菜单列表背景 */
+    --search-engine-background-color: #eee;
+    /* 搜索卡片 - 聚合搜索菜单列表阴影 */
+    --search-engine-box-shadow: #d8d7d7;
+    /* 搜索卡片 - 聚合搜索菜单列表文本 */
+    --search-engine-tit-color: #888;
+    /* 搜索卡片 - 聚合搜索菜单列表项背景 */
+    --search-engine-list-li-background-color: #e7e6e6;
+    /* 搜索卡片 - 聚合搜索菜单列表项文本 */
+    --search-engine-list-li-color: #555;
+    /* 搜索卡片 - 聚合搜索菜单列表滚动条轨道 */
+    --search-engine-webkit-scrollbar-track: #e4e4e4;
+    /* 搜索卡片 - 聚合搜索菜单列表滚动条滑块 */
+    --search-engine-webkit-scrollbar-thumb: #f1f1f1;
+    /* 搜索卡片 - 一言句子文本 */
+    --hitokoto-box-color: #555;
+    /* 搜索卡片 - 搜索卡片切换按钮背景 */
+    --card-search-button-background-color: #fff;
+    /* 搜索卡片 - 搜索卡片切换按钮图标 */
+    --card-search-button-color: #000;
+}

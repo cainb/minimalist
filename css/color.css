@@ -9,6 +9,16 @@
     --card-background-color: #fff;
     /* 信息卡片阴影 */
     --card-box-shadow: #d7d7d7;
+    /* 信息卡片 - 深色模式按钮背景 */
+    --light-dark-button-background-color: #fff;
+    /* 信息卡片 - 深色模式按钮阴影 */
+    --light-dark-button-box-shadow: #d7d7d7;
+    /* 信息卡片 - 深色模式按钮触摸阴影 */
+    --light-dark-button-hover-box-shadow: #5f22222c;
+    /* 信息卡片 - 深色模式按钮亮色模式图标 */
+    --light-color: #ffe75c;
+    /* 信息卡片 - 深色模式按钮深色模式图标 */
+    --dark-color: #00000000;
     /* 信息卡片 - 头像背景 */
     --avatar-background-color: #fff;
     /* 信息卡片 - 头像边框 */
@@ -46,7 +56,7 @@
     /* 搜索卡片 - 聚合搜索搜索框输入文本 */
     --search-box-form-wd-color: #555;
     /* 搜索卡片 - 聚合搜索搜索框背景文本 */
-    --search-box-form-wd-webkit-input-placeholder-color: #555;
+    --search-box-form-wd-webkit-input-placeholder-color: #000;
     /* 搜索卡片 - 聚合搜索搜索框边框 */
     --search-box-form-wd-border: #eee;
     /* 搜索卡片 - 聚合搜索搜索框背景 */
@@ -54,25 +64,202 @@
     /* 搜索卡片 - 聚合搜索搜索框边框 */
     --search-box-form-wd-focus-border-color: #fff;
     /* 搜索卡片 - 聚合搜索搜索按钮图标 */
-    --search-box-form-s-color: #777;
+    --search-box-form-s-color: #5a5a5a;
     /* 搜索卡片 - 聚合搜索菜单列表背景 */
     --search-engine-background-color: #eee;
     /* 搜索卡片 - 聚合搜索菜单列表阴影 */
     --search-engine-box-shadow: #d8d7d7;
     /* 搜索卡片 - 聚合搜索菜单列表文本 */
-    --search-engine-tit-color: #888;
+    --search-engine-tit-color: #646464;
     /* 搜索卡片 - 聚合搜索菜单列表项背景 */
-    --search-engine-list-li-background-color: #e7e6e6;
+    --search-engine-list-li-background-color: #dddddd;
     /* 搜索卡片 - 聚合搜索菜单列表项文本 */
-    --search-engine-list-li-color: #555;
+    --search-engine-list-li-color: #000;
     /* 搜索卡片 - 聚合搜索菜单列表滚动条轨道 */
     --search-engine-webkit-scrollbar-track: #e4e4e4;
     /* 搜索卡片 - 聚合搜索菜单列表滚动条滑块 */
     --search-engine-webkit-scrollbar-thumb: #f1f1f1;
     /* 搜索卡片 - 一言句子文本 */
-    --hitokoto-box-color: #555;
+    --hitokoto-box-color: #000;
     /* 搜索卡片 - 搜索卡片切换按钮背景 */
     --card-search-button-background-color: #fff;
     /* 搜索卡片 - 搜索卡片切换按钮图标 */
-    --card-search-button-color: #000;
+    --card-search-button-color: #575757;
+}
+
+/* 媒体查询控制下的深色模式 */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-mode: "dark";
+    }
+
+    :root:not([data-user-color-scheme]) {
+    /* 页面背景 */
+    --body-background-color: #333;
+    /* 信息卡片背景 */
+    --card-background-color: #353535;
+    /* 信息卡片阴影 */
+    --card-box-shadow: #6e6e6e;
+    /* 信息卡片 - 深色模式按钮背景 */
+    --light-dark-button-background-color: #5c5c5c;
+    /* 信息卡片 - 深色模式按钮阴影 */
+    --light-dark-button-box-shadow: #6b6b6b;
+    /* 信息卡片 - 深色模式按钮触摸阴影 */
+    --light-dark-button-hover-box-shadow: #5f22222c;
+    /* 信息卡片 - 深色模式按钮亮色模式图标 */
+    --light-color: #00000000;
+    /* 信息卡片 - 深色模式按钮深色模式图标 */
+    --dark-color: #c0d631;
+    /* 信息卡片 - 头像背景 */
+    --avatar-background-color: #353535;
+    /* 信息卡片 - 头像边框 */
+    --avatar-border: #b4b4b4;
+    /* 信息卡片 - 图标背景 */
+    --logo-background-color: #353535;
+    /* 信息卡片 - 个性签名文本 */
+    --signature-color: #868686;
+    /* 信息卡片 - 信息卡片切换按钮分隔线 */
+    --card-button-line-border: #5f5f5f;
+    /* 信息卡片 - 信息卡片切换按钮边框 */
+    --card-button-box-i-border: #727272;
+    /* 信息卡片 - 信息卡片切换按钮图标 */
+    --card-button-box-i-color: #444;
+    /* 信息卡片 - 信息卡片切换按钮背景 */
+    --card-button-box-i-background-color: #5f5f5f;
+    /* 信息卡片 - 常用站点盒子背景 */
+    --website-box-a-background-color: #5f5f5f;
+    /* 信息卡片 - 常用站点盒子图标 */
+    --website-box-a-color: #444;
+    /* 信息卡片 - 常用站点盒子阴影 */
+    --website-box-a-box-shadow: #a5a5a56b;
+    /* 信息卡片 - 常用站点盒子触摸阴影 */
+    --website-box-a-hover-box-shadow: #5f22222c;
+    /* 信息卡片 - 常用站点盒子文本 */
+    --website-box-p-color: #868686;
+    /* 搜索卡片背景 */
+    --card-search-background-color: #353535;
+    /* 搜索卡片 - 时间与日期文本 */
+    --time-date-color: #a7a7a7;
+    /* 搜索卡片 - 聚合搜索背景 */
+    --search-box-form-background-color: #5f5f5f;
+    /* 搜索卡片 - 聚合搜索边框 */
+    --search-box-form-border: #5f5f5f;
+    /* 搜索卡片 - 聚合搜索搜索框输入文本 */
+    --search-box-form-wd-color: #a7a7a7;
+    /* 搜索卡片 - 聚合搜索搜索框背景文本 */
+    --search-box-form-wd-webkit-input-placeholder-color: #a7a7a7;
+    /* 搜索卡片 - 聚合搜索搜索框边框 */
+    --search-box-form-wd-border: #5f5f5f;
+    /* 搜索卡片 - 聚合搜索搜索框背景 */
+    --search-box-form-wd-focus-background-color: #555;
+    /* 搜索卡片 - 聚合搜索搜索框边框 */
+    --search-box-form-wd-focus-border-color: #707070;
+    /* 搜索卡片 - 聚合搜索搜索按钮图标 */
+    --search-box-form-s-color: #272727;
+    /* 搜索卡片 - 聚合搜索菜单列表背景 */
+    --search-engine-background-color: #555;
+    /* 搜索卡片 - 聚合搜索菜单列表阴影 */
+    --search-engine-box-shadow: #6e6e6e;
+    /* 搜索卡片 - 聚合搜索菜单列表文本 */
+    --search-engine-tit-color: #a7a7a7;
+    /* 搜索卡片 - 聚合搜索菜单列表项背景 */
+    --search-engine-list-li-background-color: #5f5f5f;
+    /* 搜索卡片 - 聚合搜索菜单列表项文本 */
+    --search-engine-list-li-color: #a7a7a7;
+    /* 搜索卡片 - 聚合搜索菜单列表滚动条轨道 */
+    --search-engine-webkit-scrollbar-track: #e4e4e4;
+    /* 搜索卡片 - 聚合搜索菜单列表滚动条滑块 */
+    --search-engine-webkit-scrollbar-thumb: #f1f1f1;
+    /* 搜索卡片 - 一言句子文本 */
+    --hitokoto-box-color: #a7a7a7;
+    /* 搜索卡片 - 搜索卡片切换按钮背景 */
+    --card-search-button-background-color: #353535;
+    /* 搜索卡片 - 搜索卡片切换按钮图标 */
+    --card-search-button-color: #696969;
+}}
+
+/* 按钮控制下的深色模式 */
+[data-user-color-scheme="dark"] {
+    /* 页面背景 */
+    --body-background-color: #333;
+    /* 信息卡片背景 */
+    --card-background-color: #353535;
+    /* 信息卡片阴影 */
+    --card-box-shadow: #6e6e6e;
+    /* 信息卡片 - 深色模式按钮背景 */
+    --light-dark-button-background-color: #5c5c5c;
+    /* 信息卡片 - 深色模式按钮阴影 */
+    --light-dark-button-box-shadow: #6b6b6b;
+    /* 信息卡片 - 深色模式按钮触摸阴影 */
+    --light-dark-button-hover-box-shadow: #5f22222c;
+    /* 信息卡片 - 深色模式按钮亮色模式图标 */
+    --light-color: #00000000;
+    /* 信息卡片 - 深色模式按钮深色模式图标 */
+    --dark-color: #c0d631;
+    /* 信息卡片 - 头像背景 */
+    --avatar-background-color: #353535;
+    /* 信息卡片 - 头像边框 */
+    --avatar-border: #b4b4b4;
+    /* 信息卡片 - 图标背景 */
+    --logo-background-color: #353535;
+    /* 信息卡片 - 个性签名文本 */
+    --signature-color: #868686;
+    /* 信息卡片 - 信息卡片切换按钮分隔线 */
+    --card-button-line-border: #5f5f5f;
+    /* 信息卡片 - 信息卡片切换按钮边框 */
+    --card-button-box-i-border: #727272;
+    /* 信息卡片 - 信息卡片切换按钮图标 */
+    --card-button-box-i-color: #444;
+    /* 信息卡片 - 信息卡片切换按钮背景 */
+    --card-button-box-i-background-color: #5f5f5f;
+    /* 信息卡片 - 常用站点盒子背景 */
+    --website-box-a-background-color: #5f5f5f;
+    /* 信息卡片 - 常用站点盒子图标 */
+    --website-box-a-color: #444;
+    /* 信息卡片 - 常用站点盒子阴影 */
+    --website-box-a-box-shadow: #a5a5a56b;
+    /* 信息卡片 - 常用站点盒子触摸阴影 */
+    --website-box-a-hover-box-shadow: #5f22222c;
+    /* 信息卡片 - 常用站点盒子文本 */
+    --website-box-p-color: #868686;
+    /* 搜索卡片背景 */
+    --card-search-background-color: #353535;
+    /* 搜索卡片 - 时间与日期文本 */
+    --time-date-color: #a7a7a7;
+    /* 搜索卡片 - 聚合搜索背景 */
+    --search-box-form-background-color: #5f5f5f;
+    /* 搜索卡片 - 聚合搜索边框 */
+    --search-box-form-border: #5f5f5f;
+    /* 搜索卡片 - 聚合搜索搜索框输入文本 */
+    --search-box-form-wd-color: #a7a7a7;
+    /* 搜索卡片 - 聚合搜索搜索框背景文本 */
+    --search-box-form-wd-webkit-input-placeholder-color: #a7a7a7;
+    /* 搜索卡片 - 聚合搜索搜索框边框 */
+    --search-box-form-wd-border: #5f5f5f;
+    /* 搜索卡片 - 聚合搜索搜索框背景 */
+    --search-box-form-wd-focus-background-color: #555;
+    /* 搜索卡片 - 聚合搜索搜索框边框 */
+    --search-box-form-wd-focus-border-color: #707070;
+    /* 搜索卡片 - 聚合搜索搜索按钮图标 */
+    --search-box-form-s-color: #272727;
+    /* 搜索卡片 - 聚合搜索菜单列表背景 */
+    --search-engine-background-color: #555;
+    /* 搜索卡片 - 聚合搜索菜单列表阴影 */
+    --search-engine-box-shadow: #6e6e6e;
+    /* 搜索卡片 - 聚合搜索菜单列表文本 */
+    --search-engine-tit-color: #a7a7a7;
+    /* 搜索卡片 - 聚合搜索菜单列表项背景 */
+    --search-engine-list-li-background-color: #5f5f5f;
+    /* 搜索卡片 - 聚合搜索菜单列表项文本 */
+    --search-engine-list-li-color: #a7a7a7;
+    /* 搜索卡片 - 聚合搜索菜单列表滚动条轨道 */
+    --search-engine-webkit-scrollbar-track: #e4e4e4;
+    /* 搜索卡片 - 聚合搜索菜单列表滚动条滑块 */
+    --search-engine-webkit-scrollbar-thumb: #f1f1f1;
+    /* 搜索卡片 - 一言句子文本 */
+    --hitokoto-box-color: #a7a7a7;
+    /* 搜索卡片 - 搜索卡片切换按钮背景 */
+    --card-search-button-background-color: #353535;
+    /* 搜索卡片 - 搜索卡片切换按钮图标 */
+    --card-search-button-color: #696969;
 }

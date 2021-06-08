@@ -27,6 +27,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    border-radius: 10px;
     background-color: var(--card-background-color);
     box-shadow: 0px 5px 15px 0px var(--card-box-shadow);
     display: flex;
@@ -34,9 +35,49 @@ body {
     align-items: center;
 }
 
+/* 深色模式按钮 */
+
+.light-dark-button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 100px;
+    background-color: var(--light-dark-button-background-color);
+    box-shadow: 0px 5px 30px 0px var(--light-dark-button-box-shadow);
+    font-size: 1rem;
+    cursor:pointer;
+    z-index: 1;
+}
+
+.light-dark-button:hover {
+    box-shadow: inset 5px 5px 10px var(--light-dark-button-hover-box-shadow);
+    transition: box-shadow 0.2s ease-out;
+}
+
+.light-dark-button .light {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    color: var(--light-color);
+    transition: 0s all;
+}
+
+.light-dark-button .dark {
+    position: absolute;
+    top: 8px;
+    right: 6px;
+    color: var(--dark-color);
+    transform:rotate(-130deg);
+    transition: 0s all;
+}
+
 /* 信息卡片 - 头像 */
 
 .card .avatar {
+    width: 128px;
+    height: 128px;
     border-radius: 100px;
     margin: 100px 0px 0px 0px;
     background-color: var(--avatar-background-color);

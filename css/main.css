@@ -513,3 +513,25 @@ li {
 .card-search .card-search-button i:hover {
     transform:rotate(360deg);
 }
+
+/* 页脚 */
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: var(--footer-color);
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--footer-color);
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

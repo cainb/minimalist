@@ -34,7 +34,7 @@ body {
 /* 信息卡片 - 头像 */
 
 .card .avatar {
-    padding: 100px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
 }
 
 .card .avatar img {
@@ -52,7 +52,7 @@ body {
 /* 信息卡片 - 图标 */
 
 .card .logo {
-    padding: 20px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
 }
 
 .card .logo img{
@@ -72,7 +72,7 @@ body {
     width: 72px;
     height: 72px;
     border-radius: 100px;
-    padding: 20px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     cursor: pointer;
 }
 
@@ -86,6 +86,7 @@ body {
     right: 0;
     bottom: 0;
     border: 1px solid #000000;
+    pointer-events: none;
 }
 
 .card .card-button .card-button-box {
@@ -123,7 +124,6 @@ body {
 /* 信息卡片 - 常用站点 */
 
 .website {
-    padding: 0px 0px 0px 0px;
     display: flex;
     justify-content: center;
 }
@@ -194,7 +194,7 @@ body {
 /* 时间与日期 - 获取时间 */
 
 .card-search .time-date .time {
-    padding: 100px 0px 0px 0px;
+    margin: 100px 0px 0px 0px;
     font-size: 8rem;
 }
 
@@ -207,7 +207,7 @@ body {
 /* 聚合搜索 */
 .card-search .search-box {
     position: relative;
-    padding: 150px 0px 0px 0px;
+    margin: 150px 0px 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -412,7 +412,7 @@ li {
 
 .card-search .hitokoto-box {
     width: 350px;
-    padding: 20px 0px 0px 0px;
+    margin: 20px 0px 0px 0px;
     color: #555555;
 }
 
@@ -440,7 +440,7 @@ li {
     width: 72px;
     height: 72px;
     border-radius: 100px;
-    padding: 60px 0px 0px 0px;
+    margin: 60px 0px 0px 0px;
     cursor: pointer;
 }
 

@@ -9,12 +9,6 @@
     --card-background-color: #fff;
     /* 信息卡片阴影 */
     --card-box-shadow: #d7d7d7;
-    /* 信息卡片 - 深色模式按钮背景 */
-    --light-dark-button-background-color: #fff;
-    /* 信息卡片 - 深色模式按钮阴影 */
-    --light-dark-button-box-shadow: #d7d7d7;
-    /* 信息卡片 - 深色模式按钮触摸阴影 */
-    --light-dark-button-hover-box-shadow: #5f22222c;
     /* 信息卡片 - 深色模式按钮亮色模式图标 */
     --light-color: #ffe75c;
     /* 信息卡片 - 深色模式按钮深色模式图标 */
@@ -78,7 +72,7 @@
     /* 搜索卡片 - 聚合搜索菜单列表滚动条轨道 */
     --search-engine-webkit-scrollbar-track: #e4e4e4;
     /* 搜索卡片 - 聚合搜索菜单列表滚动条滑块 */
-    --search-engine-webkit-scrollbar-thumb: #f1f1f1;
+    --search-engine-webkit-scrollbar-thumb: #f7f7f7;
     /* 搜索卡片 - 一言句子文本 */
     --hitokoto-box-color: #000;
     /* 搜索卡片 - 搜索卡片切换按钮背景 */
@@ -102,12 +96,6 @@
     --card-background-color: #353535;
     /* 信息卡片阴影 */
     --card-box-shadow: #6e6e6e;
-    /* 信息卡片 - 深色模式按钮背景 */
-    --light-dark-button-background-color: #5c5c5c;
-    /* 信息卡片 - 深色模式按钮阴影 */
-    --light-dark-button-box-shadow: #6b6b6b;
-    /* 信息卡片 - 深色模式按钮触摸阴影 */
-    --light-dark-button-hover-box-shadow: #5f22222c;
     /* 信息卡片 - 深色模式按钮亮色模式图标 */
     --light-color: #00000000;
     /* 信息卡片 - 深色模式按钮深色模式图标 */
@@ -169,9 +157,9 @@
     /* 搜索卡片 - 聚合搜索菜单列表项文本 */
     --search-engine-list-li-color: #a7a7a7;
     /* 搜索卡片 - 聚合搜索菜单列表滚动条轨道 */
-    --search-engine-webkit-scrollbar-track: #e4e4e4;
+    --search-engine-webkit-scrollbar-track: #494949;
     /* 搜索卡片 - 聚合搜索菜单列表滚动条滑块 */
-    --search-engine-webkit-scrollbar-thumb: #f1f1f1;
+    --search-engine-webkit-scrollbar-thumb: #666;
     /* 搜索卡片 - 一言句子文本 */
     --hitokoto-box-color: #a7a7a7;
     /* 搜索卡片 - 搜索卡片切换按钮背景 */
@@ -190,12 +178,6 @@
     --card-background-color: #353535;
     /* 信息卡片阴影 */
     --card-box-shadow: #6e6e6e;
-    /* 信息卡片 - 深色模式按钮背景 */
-    --light-dark-button-background-color: #5c5c5c;
-    /* 信息卡片 - 深色模式按钮阴影 */
-    --light-dark-button-box-shadow: #6b6b6b;
-    /* 信息卡片 - 深色模式按钮触摸阴影 */
-    --light-dark-button-hover-box-shadow: #5f22222c;
     /* 信息卡片 - 深色模式按钮亮色模式图标 */
     --light-color: #00000000;
     /* 信息卡片 - 深色模式按钮深色模式图标 */
@@ -257,9 +239,9 @@
     /* 搜索卡片 - 聚合搜索菜单列表项文本 */
     --search-engine-list-li-color: #a7a7a7;
     /* 搜索卡片 - 聚合搜索菜单列表滚动条轨道 */
-    --search-engine-webkit-scrollbar-track: #e4e4e4;
+    --search-engine-webkit-scrollbar-track: #494949;
     /* 搜索卡片 - 聚合搜索菜单列表滚动条滑块 */
-    --search-engine-webkit-scrollbar-thumb: #f1f1f1;
+    --search-engine-webkit-scrollbar-thumb: #666;
     /* 搜索卡片 - 一言句子文本 */
     --hitokoto-box-color: #a7a7a7;
     /* 搜索卡片 - 搜索卡片切换按钮背景 */

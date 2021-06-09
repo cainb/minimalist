@@ -44,36 +44,26 @@ body {
     width: 50px;
     height: 50px;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 8px;
+    right: 0px;
     border-radius: 100px;
-    background-color: var(--light-dark-button-background-color);
-    box-shadow: 0px 5px 30px 0px var(--light-dark-button-box-shadow);
     font-size: 1rem;
     cursor:pointer;
     z-index: 1;
 }
 
-.light-dark-button:hover {
-    box-shadow: inset 5px 5px 10px var(--light-dark-button-hover-box-shadow);
-    transition: box-shadow 0.2s ease-out;
-}
-
 .light-dark-button .light {
     position: absolute;
-    top: 8px;
-    right: 6px;
+    top: -5px;
     color: var(--light-color);
-    transition: 0s all;
+    font-size: 3.5rem;
 }
 
 .light-dark-button .dark {
     position: absolute;
-    top: 8px;
-    right: 6px;
     color: var(--dark-color);
+    font-size: 3.5rem;
     transform:rotate(-130deg);
-    transition: 0s all;
 }
 
 /* 信息卡片 - 头像 */
@@ -163,6 +153,7 @@ body {
     color: var(--card-button-box-i-color);
     background-color: var(--card-button-box-i-background-color);
     border-radius: 100px;
+    font-size: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,6 +200,7 @@ body {
 
 .website-box a i {
     width: 32px;
+    font-size: 2.5rem;
     text-align: center;
     transition: width 0.2s ease-out;
 }
@@ -336,16 +328,16 @@ body {
 
 .search-box form .s {
     width: 30px;
-    height: 40px;
+    height: 30px;
     display: block;
     position: absolute;
     z-index: 0;
     right: 12px;
     top: 6px;
     cursor: pointer;
-    font-size: 22px;
     line-height: 40px;
     border-radius: 50%;
+    font-size: 2rem;
     color: var(--search-box-form-s-color);
 }
 
@@ -493,6 +485,9 @@ li {
 /* 一言句子加载失败提示 */
 
 .card-search .hitokoto-box .hitokoto p {
+    position: absolute;
+    top: 320px;
+    left: 50px;
     text-align: center;
     font-size: 1.6rem;
 }
@@ -510,17 +505,16 @@ li {
     width: 72px;
     height: 72px;
     border-radius: 100px;
-    margin: 60px 0px 0px 0px;
+    margin: 80px 0px 0px 0px;
     cursor: pointer;
     background-color: var(--card-search-button-background-color);
     color: var(--card-search-button-color);
-}
-
-.card-search .card-search-button i {
-    transition: all .8s;
+    font-size: 5rem;
+    text-align: center;
 }
 
 .card-search .card-search-button i:hover {
+    transition: all .8s;
     transform:rotate(360deg);
 }
 

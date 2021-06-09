@@ -30,13 +30,11 @@
     }
     
     .light-dark-button .light {
-        top: 6px;
-        right: 5px;
+        font-size: 2.5rem;
     }
 
     .light-dark-button .dark {
-        top: 6px;
-        right: 5px;
+        font-size: 2.5rem;
     }
 
     /* 信息卡片 - 头像 */
@@ -99,6 +97,10 @@
         height: 54px;
     }
 
+    .website-box a i {
+        font-size: 2rem;
+    }
+
     .website-box p {
         position: relative;
         top: -10px;
@@ -155,7 +157,7 @@
     /*滚动条整体样式*/
 
     .card-search .search-engine::-webkit-scrollbar {
-        width: 5px;
+        width: 6px;
     }
 
     /* 搜索卡片 - 一言句子 */
@@ -186,12 +188,15 @@
     .card-search .hitokoto-box .hitokoto p {
         position: absolute;
         top: -10px;
+        left: 0px;
+        font-size: 1.1rem;
     }
 
     /* 搜索卡片切换按钮 */
 
     .card-search .card-search-button {
-        margin: 100px 0px 0px;
+        margin: 150px 0px 0px;
+        font-size: 3.5rem;
     }
 
     /* 页脚 */

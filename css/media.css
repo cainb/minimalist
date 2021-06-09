@@ -1,0 +1,202 @@
+/* Copyright © 2021 Cai Hai. All Rights Reserved. */
+
+/* 页面自适应 */
+
+/* Minimalist 默认样式的适配分辨率为：1920 * 1080 */
+/* 此处适配的分辨率基于：360 * 640，宽度低于 960px 的会切换至该样式*/
+
+@media screen and (max-width: 960px) {
+
+    /* 页面 */
+
+    html,
+    body {
+        min-height: 600px;
+    }
+
+    /* 信息卡片 */
+
+    .card {
+        width: 320px;
+        height: 460px;
+    }
+
+    /* 深色模式按钮 */
+
+    .light-dark-button {
+        width: 36px;
+        height: 36px;
+        font-size: 0.7rem;
+    }
+    
+    .light-dark-button .light {
+        top: 6px;
+        right: 5px;
+    }
+
+    .light-dark-button .dark {
+        top: 6px;
+        right: 5px;
+    }
+
+    /* 信息卡片 - 头像 */
+
+    .card .avatar {
+        width: 96px;
+        height: 96px;
+        margin: 60px 0px 0px 0px;
+    }
+
+    .card .avatar img {
+        width: 96px;
+        height: 96px;
+    }
+
+    /* 信息卡片 - 图标 */
+
+    .card .logo {
+        margin: 0px 0px 0px 0px;
+    }
+
+    /* 信息卡片 - 个性签名 */
+
+    .card .signature {
+        font-size: 1.2rem;
+    }
+
+    /* 信息卡片 - 信息卡片切换按钮 */
+
+    .card .card-button {
+        margin: 0px 0px 10px 0px;
+    }
+
+    .card .card-button .card-button-line {
+        width: 300px;
+        top: 180px;
+    }
+
+    .card .card-button .card-button-box {
+        width: 56px;
+        height: 56px;
+        top: 180px;
+    }
+
+    .card-button .card-button-box i {
+        width: 56px;
+        height: 56px;
+        font-size: 2.5rem;
+    }
+
+    /* 信息卡片 - 常用站点 - 站点盒子 */
+
+    .website-box {
+        width: 54px;
+        height: 54px;
+    }
+
+    .website-box a {
+        width: 54px;
+        height: 54px;
+    }
+
+    .website-box p {
+        position: relative;
+        top: -10px;
+        font-size: 1rem;
+    }
+
+    /* 搜索卡片 */
+
+    .card-search {
+        width: 320px;
+        height: 460px;
+    }
+
+    /* 时间与日期 - 获取时间 */
+
+    .card-search .time-date .time {
+        margin: 60px 0px 0px 0px;
+        font-size: 5rem;
+    }
+
+    /* 时间与日期 - 获取日期 */
+
+    .card-search .time-date .date {
+        font-size: 1.2rem;
+    }
+
+    /* 聚合搜索 */
+
+    .card-search .search-box {
+        margin: 66px 0px 0px 0px;
+    }
+
+    .card-search .search-box form {
+        width: 300px;
+    }
+
+    .search-box form .wd {
+        width: 200px;
+    }
+
+    /* 聚合搜索菜单列表 */
+
+    .card-search .search-engine {
+        width: 280px;
+        height: 195px;
+        left: 13px;
+    }
+
+    .search-engine .search-engine-list li {
+        padding: 5px 2px 5px 10px;
+        height: 36px;
+    }
+
+    /*滚动条整体样式*/
+
+    .card-search .search-engine::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* 搜索卡片 - 一言句子 */
+
+    .card-search .hitokoto-box {
+        width: 280px;
+        position: absolute;
+        top: 220px;
+    }
+
+    /* 一言句子正文 */
+
+    .card-search .hitokoto-box .hitokoto {
+        font-size: 1.3rem;
+    }
+
+    /* 一言句子加载失败提示 */
+
+    .card-search .hitokoto-box .hitokoto p {
+        font-size: 1.3rem;
+    }
+
+    /* 一言句子作者与出处 */
+    .card-search .hitokoto-box .hitofrom {
+        font-size: 1rem;
+    }
+    
+    .card-search .hitokoto-box .hitokoto p {
+        position: absolute;
+        top: -10px;
+    }
+
+    /* 搜索卡片切换按钮 */
+
+    .card-search .card-search-button {
+        margin: 100px 0px 0px;
+    }
+
+    /* 页脚 */
+
+    .footer {
+        font-size: 1rem;
+    }
+}

@@ -88,9 +88,11 @@ body {
     transform:rotate(360deg);
 }
 
-/* 信息卡片 - 图标 */
+/* 信息卡片 - 徽标 */
 
 .card .logo {
+    width: 200px;
+    height: 65px;
     margin: 20px 0px 0px 0px;
     background-color: var(--logo-background-color);
 }
@@ -103,7 +105,9 @@ body {
 /* 信息卡片 - 个性签名 */
 
 .card .signature {
+    height: 70px;
     font-size: 1.5rem;
+    text-align: center;
     color: var(--signature-color);
 }
 
@@ -170,8 +174,6 @@ body {
     display: flex;
     justify-content: center;
 }
-
-/* 信息卡片 - 常用站点 - 站点盒子 */
 
 .website-box {
     width: 64px;

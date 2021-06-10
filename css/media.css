@@ -59,6 +59,7 @@
     /* 信息卡片 - 个性签名 */
 
     .card .signature {
+        height: 55px;
         font-size: 1.2rem;
     }
 

@@ -391,3 +391,86 @@ $(document).ready(function hitokoto() {
 			console.error(err);
 		});
 });
+
+// 页面内容 json 数组化
+
+$(document).ready(function() {
+
+	// 头像
+
+    var avatarData = '';
+    for(var i = 0; i < avatarDataJson.length; i++) {
+        avatarData =
+			'<a href="' + avatarDataJson[i].aHref + '">' +
+				'<img src="' + avatarDataJson[i].imgSrc + '">' +
+			'</a>'
+		$("#avatar").append(avatarData)
+    }
+
+	// logo 图标
+
+	var logoData = '';
+	for(var i = 0; i < logoDataJson.length; i++) {
+        logoData =
+			'<img src="' + logoDataJson[i].imgSrc + '">'
+		$("#logo").append(logoData)
+    }
+
+	// 个性签名
+
+	var signatureData = '';
+	for(var i = 0; i < signatureDataJson.length; i++) {
+		signatureData = 
+			'<p>' + signatureDataJson[i].pText + '</p>'
+		$("#signature").append(signatureData)
+	}
+
+	// 常用站点
+
+	var websiteData = '';
+	for(var i = 0; i < websiteDataJson.length; i++) {
+		websiteData = 
+			'<div class="website-box">' +
+				'<a href="' + websiteDataJson[i].aHref + '">' +
+					'<i class="' + websiteDataJson[i].iClass + '"></i>' +
+				'</a>' +
+				'<p>' + websiteDataJson[i].pText + '</p>' +
+			'</div>'
+		$("#website").append(websiteData)
+	}
+
+	// 聚合搜索
+
+	// 默认搜索引擎
+	var searchBoxData = '';
+	// 搜索引擎列表
+	var searchEngineListData = '';
+	for(var i = 0; i < searchBoxDataJson.length; i++) {
+		searchBoxData =
+			'<form class="search" action="' + searchBoxDataJson[i].formAcrion + '" target="_blank">' +
+				'<img class="se" src="' + searchBoxDataJson[i].imgSrc + '">' +
+				'<input class="wd" type="text" name="' + searchBoxDataJson[i].inputName + '" placeholder="快来搜一下吧 ^-^">' +
+				'<button class="s">' +
+					'<i class="fas fa-search"></i>' +
+				'</button>' +
+			'</form>'
+		$("#search-box").append(searchBoxData)
+	}
+	for(var i = 0; i < searchEngineListDataJson.length; i++) {
+		searchEngineListData = 
+			'<li class="se-li" url="' + searchEngineListDataJson[i].liUrl + '" name="' + searchEngineListDataJson[i].liName + '" img="' + searchEngineListDataJson[i].liImgSrc + '">' +
+				'<img src="' + searchEngineListDataJson[i].liImgSrc + '">' +
+					searchEngineListDataJson[i].liText +
+			'</li>'
+		$("#search-engine-list").append(searchEngineListData)
+	}
+
+	// 页脚
+
+	var footerData = '';
+	for(var i = 0; i < footerDataJson.length; i++) {
+		footerData = 
+			'<p>' + footerDataJson[i].pText + '</p>'
+		$("#footer").append(footerData)
+	}
+});

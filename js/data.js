@@ -75,7 +75,7 @@ var searchBoxDataJson = [
 ]
 
 // 聚合搜索 - 搜索引擎列表
-// 搜索引擎列表可随意创建多个 json 对象，文本尽量简短
+// 搜索引擎列表可随意创建多个 json 对象，文本尽量简短，超出部分会以省略号显示
 
 var searchEngineListDataJson = [
     {

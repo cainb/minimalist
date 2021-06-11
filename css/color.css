@@ -29,6 +29,12 @@
     --card-button-box-i-color: #000;
     /* 信息卡片 - 信息卡片切换按钮背景 */
     --card-button-box-i-background-color: #fff;
+    /* 信息卡片 - 常用站点滚动条背景 */
+    --website-webkit-scrollbar-button: #cf2d2d00;
+    /* 信息卡片 - 常用站点滚动条轨道 */
+    --website-webkit-scrollbar-track: #e4e4e4;
+    /* 信息卡片 - 常用站点滚动条滑块 */
+    --website-webkit-scrollbar-thumb: #d4d4d4;
     /* 信息卡片 - 常用站点盒子背景 */
     --website-box-a-background-color: #f0f0f0;
     /* 信息卡片 - 常用站点盒子图标 */
@@ -37,8 +43,6 @@
     --website-box-a-box-shadow: #ffffff6b;
     /* 信息卡片 - 常用站点盒子触摸阴影 */
     --website-box-a-hover-box-shadow: #5f22222c;
-    /* 信息卡片 - 常用站点盒子文本 */
-    --website-box-p-color: #555;
     /* 搜索卡片背景 */
     --card-search-background-color: #fff;
     /* 搜索卡片 - 时间与日期文本 */
@@ -72,7 +76,7 @@
     /* 搜索卡片 - 聚合搜索菜单列表滚动条轨道 */
     --search-engine-webkit-scrollbar-track: #e4e4e4;
     /* 搜索卡片 - 聚合搜索菜单列表滚动条滑块 */
-    --search-engine-webkit-scrollbar-thumb: #f7f7f7;
+    --search-engine-webkit-scrollbar-thumb: #d4d4d4;
     /* 搜索卡片 - 一言句子文本 */
     --hitokoto-box-color: #000;
     /* 搜索卡片 - 搜索卡片切换按钮背景 */
@@ -116,6 +120,12 @@
     --card-button-box-i-color: #444;
     /* 信息卡片 - 信息卡片切换按钮背景 */
     --card-button-box-i-background-color: #5f5f5f;
+    /* 信息卡片 - 常用站点滚动条背景 */
+    --website-webkit-scrollbar-button: #cf2d2d00;
+    /* 信息卡片 - 常用站点滚动条轨道 */
+    --website-webkit-scrollbar-track: #494949;
+    /* 信息卡片 - 常用站点滚动条滑块 */
+    --website-webkit-scrollbar-thumb: #666;
     /* 信息卡片 - 常用站点盒子背景 */
     --website-box-a-background-color: #5f5f5f;
     /* 信息卡片 - 常用站点盒子图标 */
@@ -124,8 +134,6 @@
     --website-box-a-box-shadow: #a5a5a56b;
     /* 信息卡片 - 常用站点盒子触摸阴影 */
     --website-box-a-hover-box-shadow: #5f22222c;
-    /* 信息卡片 - 常用站点盒子文本 */
-    --website-box-p-color: #a7a7a7;
     /* 搜索卡片背景 */
     --card-search-background-color: #353535;
     /* 搜索卡片 - 时间与日期文本 */
@@ -198,6 +206,12 @@
     --card-button-box-i-color: #444;
     /* 信息卡片 - 信息卡片切换按钮背景 */
     --card-button-box-i-background-color: #5f5f5f;
+    /* 信息卡片 - 常用站点滚动条背景 */
+    --website-webkit-scrollbar-button: #cf2d2d00;
+    /* 信息卡片 - 常用站点滚动条轨道 */
+    --website-webkit-scrollbar-track: #494949;
+    /* 信息卡片 - 常用站点滚动条滑块 */
+    --website-webkit-scrollbar-thumb: #666;
     /* 信息卡片 - 常用站点盒子背景 */
     --website-box-a-background-color: #5f5f5f;
     /* 信息卡片 - 常用站点盒子图标 */
@@ -206,8 +220,6 @@
     --website-box-a-box-shadow: #a5a5a56b;
     /* 信息卡片 - 常用站点盒子触摸阴影 */
     --website-box-a-hover-box-shadow: #5f22222c;
-    /* 信息卡片 - 常用站点盒子文本 */
-    --website-box-p-color: #a7a7a7;
     /* 搜索卡片背景 */
     --card-search-background-color: #353535;
     /* 搜索卡片 - 时间与日期文本 */

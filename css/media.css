@@ -42,7 +42,7 @@
     .card .avatar {
         width: 96px;
         height: 96px;
-        margin: 60px 0px 0px 0px;
+        margin: 40px 0px 20px 0px;
     }
 
     .card .avatar img {
@@ -88,9 +88,22 @@
 
     /* 信息卡片 - 常用站点 - 站点盒子 */
 
+    .website {
+        width: 300px;
+    }
+
+    .website::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    .website::-webkit-scrollbar-button {
+        width: 65px;
+    }
+
     .website-box {
         width: 54px;
         height: 54px;
+        margin: 14px 3px;
     }
 
     .website-box a {
@@ -100,12 +113,6 @@
 
     .website-box a i {
         font-size: 2rem;
-    }
-
-    .website-box p {
-        position: relative;
-        top: -10px;
-        font-size: 1rem;
     }
 
     /* 搜索卡片 */

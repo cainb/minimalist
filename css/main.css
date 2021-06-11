@@ -72,7 +72,7 @@ body {
     width: 128px;
     height: 128px;
     border-radius: 100px;
-    margin: 100px 0px 0px 0px;
+    margin: 80px 0px 20px 0px;
     background-color: var(--avatar-background-color);
     border: 1px solid var(--avatar-border);
 }
@@ -171,19 +171,41 @@ body {
 /* 信息卡片 - 常用站点 */
 
 .website {
+    width: 430px;
     display: flex;
-    justify-content: center;
+    justify-content: none;
+    overflow: auto;
+}
+
+.website::-webkit-scrollbar {
+    height: 6px;
+}
+
+.website::-webkit-scrollbar-button {
+    background-color: var(--website-webkit-scrollbar-button);
+    border-radius: 10px;
+    width: 95px;
+}
+
+.website::-webkit-scrollbar-track {
+    background-color: var(--website-webkit-scrollbar-track);
+    border-radius: 15px;
+}
+
+.website::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background-color: var(--website-webkit-scrollbar-thumb);
 }
 
 .website-box {
-    width: 64px;
-    height: 64px;
+    width: 74px;
+    height: 74px;
     margin: 14px 6px;
 }
 
 .website-box a {
-    width: 64px;
-    height: 64px;
+    width: 74px;
+    height: 74px;
     border-radius: 20px;
     transition: box-shadow 0.2s ease-out;
     display: flex;
@@ -205,12 +227,6 @@ body {
     font-size: 2.5rem;
     text-align: center;
     transition: width 0.2s ease-out;
-}
-
-.website-box p {
-    text-align: center;
-    font-size: 1rem;
-    color: var(--website-box-p-color);
 }
 
 /* 搜索卡片 */
@@ -529,7 +545,7 @@ li {
     color: var(--footer-color);
     font-size: 1.2rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
 }
 
@@ -540,4 +556,8 @@ li {
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+.footer p {
+    margin: 1px;
 }

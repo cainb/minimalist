@@ -25,7 +25,7 @@ var logoDataJson = [
 ]
 
 // 个性签名
-// 个性签名只允许创建 json 对象，文本尽量简短
+// 个性签名只允许创建一个 json 对象，文本尽量简短
 
 var signatureDataJson = [
     {
@@ -35,24 +35,25 @@ var signatureDataJson = [
 ]
 
 // 常用站点
+
 // 常用站点可随意创建 json 对象，文本尽量简短
+// 图标使用的是 Font Awesome Free 5.15.1，网址：https://fontawesome.com
 
 var websiteDataJson = [
     {
         // 超链接
         'aHref': '',
+        // 超链接提示文本
+        'aTitle': 'Minimalist',
         // 图标
-        'iClass': 'fas fa-home',
-        // 文本
-        'pText': 'Minimalist'
+        'iClass': 'fas fa-home'
     }
 ]
 
 // 聚合搜索
 
 // 关于下方两个 json 数组内的对象里出现的链接和参数的名称和值的一些说明
-// 比如，当我们在必应搜索页面的搜索框中搜索问题并回车后，地址栏里的链接一般是这样子的：
-// https://cn.bing.com/search?q=问题
+// 比如，当我们在必应搜索页面的搜索框中搜索问题并回车后，地址栏里的链接一般是这样子的：https://cn.bing.com/search?q=问题
 // 链接知道了，那么现在就来解析一下这条链接：
 // 链接里 ? 前面那部分便是对象需要的链接：https://cn.bing.com/search
 // 链接里 ? 和 = 之间的字母便是对象需要的参数：q

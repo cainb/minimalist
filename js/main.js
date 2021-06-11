@@ -121,6 +121,22 @@ $(document).ready(function () {
     })
 })
 
+// 常用站点 - 水平滚动
+
+$(function () {
+	var websiteLength = websiteDataJson.length;
+	if(websiteLength < 5){
+		$(".website").css('justify-content','center')
+	}
+});
+
+$(function () {
+	$(".website").mousewheel(function (event, delta) {
+		this.scrollLeft -= delta * 30;
+		event.preventDefault();
+	});
+});
+
 // 搜索卡片 - 时间与日期
 
 function getTime() {
@@ -431,10 +447,9 @@ $(document).ready(function() {
 	for(var i = 0; i < websiteDataJson.length; i++) {
 		websiteData = 
 			'<div class="website-box">' +
-				'<a href="' + websiteDataJson[i].aHref + '">' +
+				'<a href="' + websiteDataJson[i].aHref + '" title="' + websiteDataJson[i].aTitle + '">' +
 					'<i class="' + websiteDataJson[i].iClass + '"></i>' +
 				'</a>' +
-				'<p>' + websiteDataJson[i].pText + '</p>' +
 			'</div>'
 		$("#website").append(websiteData)
 	}

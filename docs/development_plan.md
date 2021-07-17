@@ -18,7 +18,7 @@ todo：
 - [x] 改进：修正文档文件夹名拼写：doc => docs
 - [x] 移除：移除开发日志文件
 - [x] 改进：更新开发计划
-- [ ] 改进：重命名页面可填充内容 json 数组化的配置文件名：data.js => config.js
+- [x] 改进：重命名页面可填充内容 json 数组化的配置文件名：data.js => config.js
 - [ ] 优化：更换图标依赖库：Font Awesome => Bootstrap Icons
 - [ ] 改进：替换全部现有旧图标为新图标
 - [ ] 改进：一些细节上的修改

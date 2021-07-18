@@ -46,7 +46,7 @@ var websiteDataJson = [
         // 超链接提示文本
         'aTitle': 'Minimalist',
         // 图标
-        'iClass': 'fas fa-home'
+        'iClass': 'bi bi-house-fill'
     }
 ]
 

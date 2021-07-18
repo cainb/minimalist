@@ -466,7 +466,7 @@ $(document).ready(function() {
 				'<img class="se" src="' + searchBoxDataJson[i].imgSrc + '">' +
 				'<input class="wd" type="text" name="' + searchBoxDataJson[i].inputName + '" placeholder="快来搜一下吧 ^-^">' +
 				'<button class="s">' +
-					'<i class="fas fa-search"></i>' +
+					'<i class="bi bi-search"></i>' +
 				'</button>' +
 			'</form>'
 		$("#search-box").append(searchBoxData)

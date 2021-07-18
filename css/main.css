@@ -19,6 +19,75 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+/* 自定义右键菜单 */
+
+.right-click-menu .menu {
+    width: 150px;
+    background-color: var(--menu-background-color);
+    border: 1px solid var(--menu-border);
+    border-radius: 10px;
+    position: absolute;
+    padding: 0 0 5px 0;
+    margin: 0;
+    transition: all .1s ease;
+    display: none;
+    z-index: 2; 
+}
+
+/* 固定菜单项 */
+
+.menu .fixed-menu {
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid var(--fixed-menu-border-bottom);
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu .fixed-menu a {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    color: var(--fixed-menu-a-color);
+    text-align: center;
+}
+
+.menu .fixed-menu a:hover {
+    background-color: var(--fixed-menu-a-hover-background-color);
+}
+
+/* 可自定义菜单项 */
+
+.menu .custom-menu {
+    width: 100%;
+}
+
+.menu .custom-menu li {
+    height: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menu .custom-menu li:hover {
+    background-color: var(--custom-menu-li-hover-background-color);
+}
+
+.menu .custom-menu li a {
+    position: relative;
+    color: var(--custom-menu-li-a-color);
+    left: 16px;
+    text-decoration: none;
+}
+
+.menu .custom-menu li a:hover {
+    text-decoration: none;
+}
+
 /* 信息卡片 */
 
 .card {

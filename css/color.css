@@ -13,6 +13,20 @@
 :root {
     /* 页面背景 */
     --body-background-color: #fff;
+    /* 自定义右键菜单背景 */
+    --menu-background-color: #fff;
+    /* 自定义右键菜单边框 */
+    --menu-border: #ccc;
+    /* 固定菜单项分隔线 */
+    --fixed-menu-border-bottom: #ccc;
+    /* 固定菜单项触摸背景 */
+    --fixed-menu-a-hover-background-color: #e2e2e2;
+    /* 固定菜单项文本 */
+    --fixed-menu-a-color: #000;
+    /* 可自定义菜单项触摸背景 */
+    --custom-menu-li-hover-background-color: #e2e2e2;
+    /* 可自定义菜单项文本 */
+    --custom-menu-li-a-color: #000;
     /* 信息卡片背景 */
     --card-background-color: #fff;
     /* 信息卡片阴影 */
@@ -104,6 +118,20 @@
     :root:not([data-user-color-scheme]) {
     /* 页面背景 */
     --body-background-color: #333;
+    /* 自定义右键菜单背景 */
+    --menu-background-color: #333;
+    /* 自定义右键菜单边框 */
+    --menu-border: #6e6e6e;
+    /* 固定菜单项分隔线 */
+    --fixed-menu-border-bottom: #6e6e6e;
+    /* 固定菜单项触摸背景 */
+    --fixed-menu-a-hover-background-color: #5f5f5f;
+    /* 固定菜单项文本 */
+    --fixed-menu-a-color: #a7a7a7;
+    /* 可自定义菜单项触摸背景 */
+    --custom-menu-li-hover-background-color: #5f5f5f;
+    /* 可自定义菜单项文本 */
+    --custom-menu-li-a-color: #a7a7a7;
     /* 信息卡片背景 */
     --card-background-color: #353535;
     /* 信息卡片阴影 */
@@ -190,6 +218,20 @@
 [data-user-color-scheme="dark"] {
     /* 页面背景 */
     --body-background-color: #333;
+    /* 自定义右键菜单背景 */
+    --menu-background-color: #333;
+    /* 自定义右键菜单边框 */
+    --menu-border: #6e6e6e;
+    /* 固定菜单项分隔线 */
+    --fixed-menu-border-bottom: #6e6e6e;
+    /* 固定菜单项触摸背景 */
+    --fixed-menu-a-hover-background-color: #5f5f5f;
+    /* 固定菜单项文本 */
+    --fixed-menu-a-color: #a7a7a7;
+    /* 可自定义菜单项触摸背景 */
+    --custom-menu-li-hover-background-color: #5f5f5f;
+    /* 可自定义菜单项文本 */
+    --custom-menu-li-a-color: #a7a7a7;
     /* 信息卡片背景 */
     --card-background-color: #353535;
     /* 信息卡片阴影 */

@@ -2,13 +2,25 @@
 
 // 此文件存储页面可填充内容 json 数组化配置的所有 json 数组数据
 
+// 可自定义菜单项
+// 可自定义菜单项可随意创建 json 对象，文本尽量简短
+// 图标使用的是 Bootstrap Icons v1.5.0，网址：https://icons.bootcss.com
+
+var customMenuDataJson = [
+    {
+        'aHref': 'https://github.com/cainb/minimalist',
+        'iClass': 'bi bi-github',
+        'aText': 'Minimalist'
+    }
+]
+
 // 头像
 // 头像只允许创建一个 json 对象
 
 var avatarDataJson = [
     {
         // 超链接
-        'aHref': '',
+        'aHref': '/',
         // 图片链接
         'imgSrc': 'img/development.png'
     }
@@ -35,9 +47,8 @@ var signatureDataJson = [
 ]
 
 // 常用站点
-
 // 常用站点可随意创建 json 对象，文本尽量简短
-// 图标使用的是 Bootstrap Icons v1.5.0，网址：https://icons.bootcss.com/
+// 图标使用的是 Bootstrap Icons v1.5.0，网址：https://icons.bootcss.com
 
 var websiteDataJson = [
     {

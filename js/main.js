@@ -1,5 +1,109 @@
 // Copyright © 2021 Cai Hai. All Rights Reserved.
 
+// 自定义右键菜单
+
+// 返回按钮
+function goBack() {
+	window.history.back()
+}
+// 前进按钮
+function goForward() {
+	window.history.forward()
+}
+// 刷新按钮
+function reloadPage() {
+	window.location.reload()
+}
+// 右键菜单
+$(document).ready(function () {
+		//获取可视区宽度
+		var winWidth = function () {
+			return document.documentElement.clientWidth || document.body.clientWidth;
+		}
+		//获取可视区高度
+		var winHeight = function () {
+			return document.documentElement.clientHeight || document.body.clientHeight;
+		}
+		// 点击鼠标右键显示自定义右键菜单
+		var menu = document.getElementById('menu');
+		// menu.style.display = 'none';
+		// 点击鼠标左键重新隐藏自定义右键菜单
+		document.addEventListener('click', function () {
+			menu.style.display = 'none';
+		})
+		// 阻止事件冒泡到父级元素
+		menu.addEventListener('click', function (event) {
+			// 初始化兼容标准
+			var event = event || window.event;
+			// 阻止事件冒泡
+			event.cancelBubble = true;
+		})
+		// 提前获取自定义右键菜单的宽高
+		var aw, ah;
+		aw = 150;
+		ah = 0;
+		for(var i = 0; i < customMenuDataJson.length; i++) {
+			ah++;
+		}
+		// 获取自定义右键菜单
+		document.oncontextmenu = function (event) {
+			if(event.ctrlKey){
+				// ctrl + 鼠标右键显示默认右键菜单
+				return true;
+			} else if(/Android|webOS|BlackBerry/i.test(navigator.userAgent)){
+				// 非桌面端浏览器显示默认右键菜单
+				return true;
+			} else {
+				// 初始化兼容标准
+				var event = event || window.event;
+				// 获取鼠标坐标
+				var x, y;
+				x = event.clientX;
+				y = event.clientY;
+				// 获取鼠标所处区域
+				var w, h;
+				w = winWidth() / 2;
+				h = winHeight() / 2;
+				// 获取自定义右键菜单的宽高
+				var aaw, aah;
+				aaw = aw;
+				aah = ah * 50 + 55;
+				// 根据鼠标区域判断自定义右键菜单显示位置
+				// 左上
+				if(x < w && y < h) {
+					menu.style.left = x + 'px';
+					menu.style.top = y + 'px';
+					// 根据坐标呈现自定义右键菜单
+					menu.style.display = 'block';
+				} 
+				// 右上
+				else if(x > w && y < h){
+					menu.style.left = x - aaw + 'px';
+					menu.style.top = y + 'px';
+					// 根据坐标呈现自定义右键菜单
+					menu.style.display = 'block';
+				} 
+				// 左下
+				else if(x < w && y > h){
+					menu.style.left = x + 'px';
+					menu.style.top = y - aah + 'px';
+					// 根据坐标呈现自定义右键菜单
+					menu.style.display = 'block';
+				} 
+				// 右下
+				else {
+					menu.style.left = x - aaw + 'px';
+					menu.style.top = y - aah + 'px';
+					// 根据坐标呈现自定义右键菜单
+					menu.style.display = 'block';
+				}
+				// 屏蔽默认右键菜单
+				return false;
+			}
+		}
+	}
+);
+
 // 深色模式按钮
 
 $(document).ready(function () {
@@ -411,6 +515,20 @@ $(document).ready(function hitokoto() {
 // 页面内容 json 数组化
 
 $(document).ready(function() {
+
+	// 可自定义菜单项
+
+	var customMenuData = '';
+    for(var i = 0; i < customMenuDataJson.length; i++) {
+        customMenuData =
+			'<li>' +
+				'<a href="' + customMenuDataJson[i].aHref + '">' +
+					'<i class="' + customMenuDataJson[i].iClass + '"></i>' +
+					' ' + customMenuDataJson[i].aText +
+				'</a>' +
+			'</li>'
+		$("#custom-menu").append(customMenuData)
+    }
 
 	// 头像
 

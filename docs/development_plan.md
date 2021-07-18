@@ -19,7 +19,7 @@ todo：
 - [x] 移除：移除开发日志文件
 - [x] 改进：更新开发计划
 - [x] 改进：重命名页面可填充内容 json 数组化的配置文件名：data.js => config.js
-- [ ] 优化：更换图标依赖库：Font Awesome => Bootstrap Icons
+- [x] 优化：更换图标依赖库：Font Awesome => Bootstrap Icons
 - [ ] 改进：替换全部现有旧图标为新图标
 - [ ] 改进：一些细节上的修改
 - [ ] 新增：新增自定义右键菜单

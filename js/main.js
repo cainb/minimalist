@@ -458,8 +458,6 @@ $(document).ready(function() {
 
 	// 默认搜索引擎
 	var searchBoxData = '';
-	// 搜索引擎列表
-	var searchEngineListData = '';
 	for(var i = 0; i < searchBoxDataJson.length; i++) {
 		searchBoxData =
 			'<form class="search" action="' + searchBoxDataJson[i].formAcrion + '" target="_blank">' +
@@ -471,6 +469,8 @@ $(document).ready(function() {
 			'</form>'
 		$("#search-box").append(searchBoxData)
 	}
+	// 搜索引擎列表
+	var searchEngineListData = '';
 	for(var i = 0; i < searchEngineListDataJson.length; i++) {
 		searchEngineListData = 
 			'<li class="se-li" url="' + searchEngineListDataJson[i].liUrl + '" name="' + searchEngineListDataJson[i].liName + '" img="' + searchEngineListDataJson[i].liImgSrc + '">' +

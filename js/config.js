@@ -1,6 +1,6 @@
 // Copyright © 2021 Cai Hai. All Rights Reserved.
 
-// 此文件存储页面内容 json 数组化的所有 json 数组数据
+// 此文件存储页面可填充内容 json 数组化配置的所有 json 数组数据
 
 // 头像
 // 头像只允许创建一个 json 对象
@@ -37,7 +37,7 @@ var signatureDataJson = [
 // 常用站点
 
 // 常用站点可随意创建 json 对象，文本尽量简短
-// 图标使用的是 Font Awesome Free 5.15.1，网址：https://fontawesome.com
+// 图标使用的是 Bootstrap Icons v1.5.0，网址：https://icons.bootcss.com/
 
 var websiteDataJson = [
     {
@@ -46,7 +46,7 @@ var websiteDataJson = [
         // 超链接提示文本
         'aTitle': 'Minimalist',
         // 图标
-        'iClass': 'bi bi-house-fill'
+        'iClass': 'bi bi-house'
     }
 ]
 

@@ -54,7 +54,6 @@ body {
 
 .light-dark-button .light {
     position: absolute;
-    top: -5px;
     color: var(--light-color);
     font-size: 3.5rem;
 }
@@ -63,7 +62,7 @@ body {
     position: absolute;
     color: var(--dark-color);
     font-size: 3.5rem;
-    transform:rotate(-130deg);
+    transform:rotate(-120deg);
 }
 
 /* 信息卡片 - 头像 */
@@ -240,6 +239,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
+    border-radius: 10px;
     background-color: var(--card-search-background-color);
     display: none;
     flex-direction: column;
@@ -529,6 +529,7 @@ li {
 }
 
 .card-search .card-search-button i:hover {
+    display: inline-block;
     transition: all .8s;
     transform:rotate(360deg);
 }

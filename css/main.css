@@ -586,19 +586,26 @@ li {
 /* 搜索卡片切换按钮 */
 
 .card-search .card-search-button {
-    width: 72px;
-    height: 72px;
+    width: 60px;
+    height: 60px;
     border-radius: 100px;
     margin: 80px 0px 0px 0px;
     cursor: pointer;
     background-color: var(--card-search-button-background-color);
     color: var(--card-search-button-color);
     font-size: 5rem;
-    text-align: center;
+}
+
+.card-search .card-search-button i {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 .card-search .card-search-button i:hover {
-    display: inline-block;
     transition: all .8s;
     transform:rotate(360deg);
 }

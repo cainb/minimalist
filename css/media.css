@@ -26,6 +26,7 @@
     .light-dark-button {
         width: 36px;
         height: 36px;
+        top: 0;
         font-size: 0.7rem;
     }
     
@@ -34,6 +35,8 @@
     }
 
     .light-dark-button .dark {
+        top: 4px;
+        right: 8px;
         font-size: 2.5rem;
     }
 
@@ -203,8 +206,15 @@
     /* 搜索卡片切换按钮 */
 
     .card-search .card-search-button {
+        width: 42px;
+        height: 42px;
         margin: 150px 0px 0px;
         font-size: 3.5rem;
+    }
+
+    .card-search .card-search-button i {
+        width: 42px;
+        height: 42px;
     }
 
     /* 页脚 */

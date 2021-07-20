@@ -10,6 +10,7 @@
         之后复制并覆盖媒体查询控制下的深色模式的全局颜色管理的所有变量的值。
 */
 
+/* 默认 / 浅色模式 */
 :root {
     /* 页面背景 */
     --body-background-color: #fff;
@@ -102,9 +103,9 @@
     /* 搜索卡片 - 一言句子文本 */
     --hitokoto-box-color: #000;
     /* 搜索卡片 - 搜索卡片切换按钮背景 */
-    --card-search-button-background-color: #fff;
+    --card-search-button-background-color: #e7e6e6;
     /* 搜索卡片 - 搜索卡片切换按钮图标 */
-    --card-search-button-color: #575757;
+    --card-search-button-color: #9b9b9b;
     /* 页脚文本 */
     --footer-color: #000;
 }
@@ -207,9 +208,9 @@
     /* 搜索卡片 - 一言句子文本 */
     --hitokoto-box-color: #a7a7a7;
     /* 搜索卡片 - 搜索卡片切换按钮背景 */
-    --card-search-button-background-color: #353535;
+    --card-search-button-background-color: #696969;
     /* 搜索卡片 - 搜索卡片切换按钮图标 */
-    --card-search-button-color: #696969;
+    --card-search-button-color: #444;
     /* 页脚文本 */
     --footer-color: #a7a7a7;
 }}
@@ -307,9 +308,9 @@
     /* 搜索卡片 - 一言句子文本 */
     --hitokoto-box-color: #a7a7a7;
     /* 搜索卡片 - 搜索卡片切换按钮背景 */
-    --card-search-button-background-color: #353535;
+    --card-search-button-background-color: #696969;
     /* 搜索卡片 - 搜索卡片切换按钮图标 */
-    --card-search-button-color: #696969;
+    --card-search-button-color: #444;
     /* 页脚文本 */
     --footer-color: #a7a7a7;
 }

@@ -5,22 +5,31 @@
 // 可自定义菜单项
 // 可自定义菜单项可随意创建 json 对象，文本尽量简短
 // 图标使用的是 Bootstrap Icons v1.5.0，网址：https://icons.bootcss.com
+// 下方 json 数组中 aTarget 名称的值为空则默认在当前窗口打开链接，填入 _blank 则在新窗口中打开链接
 
 var customMenuDataJson = [
     {
+        // 超链接
         'aHref': 'https://github.com/cainb/minimalist',
+        // 属性
+        'aTarget': '_blank',
+        // 图标
         'iClass': 'bi bi-github',
+        // 文本
         'aText': 'Minimalist'
     }
 ]
 
 // 头像
 // 头像只允许创建一个 json 对象
+// 下方 json 数组中 aTarget 名称的值为空则默认在当前窗口打开链接，填入 _blank 则在新窗口中打开链接
 
 var avatarDataJson = [
     {
         // 超链接
         'aHref': '/',
+        // 属性
+        'aTarget': '',
         // 图片链接
         'imgSrc': 'img/development.png'
     }
@@ -49,11 +58,14 @@ var signatureDataJson = [
 // 常用站点
 // 常用站点可随意创建 json 对象，文本尽量简短
 // 图标使用的是 Bootstrap Icons v1.5.0，网址：https://icons.bootcss.com
+// 下方 json 数组中 aTarget 名称的值为空则默认在当前窗口打开链接，填入 _blank 则在新窗口中打开链接
 
 var websiteDataJson = [
     {
         // 超链接
         'aHref': '',
+        // 属性
+        'aTarget': '',
         // 超链接提示文本
         'aTitle': 'Minimalist',
         // 图标

@@ -524,7 +524,7 @@ $(document).ready(function() {
     for(var i = 0; i < customMenuDataJson.length; i++) {
         customMenuData =
 			'<li>' +
-				'<a href="' + customMenuDataJson[i].aHref + '">' +
+				'<a href="' + customMenuDataJson[i].aHref + '" target="' + customMenuDataJson[i].aTarget + '">' +
 					'<i class="' + customMenuDataJson[i].iClass + '"></i>' +
 					' ' + customMenuDataJson[i].aText +
 				'</a>' +
@@ -537,7 +537,7 @@ $(document).ready(function() {
     var avatarData = '';
     for(var i = 0; i < avatarDataJson.length; i++) {
         avatarData =
-			'<a href="' + avatarDataJson[i].aHref + '">' +
+			'<a href="' + avatarDataJson[i].aHref + '" target="' + avatarDataJson[i].aTarget + '">' +
 				'<img src="' + avatarDataJson[i].imgSrc + '">' +
 			'</a>'
 		$("#avatar").append(avatarData)
@@ -567,7 +567,7 @@ $(document).ready(function() {
 	for(var i = 0; i < websiteDataJson.length; i++) {
 		websiteData = 
 			'<div class="website-box">' +
-				'<a href="' + websiteDataJson[i].aHref + '" title="' + websiteDataJson[i].aTitle + '">' +
+				'<a href="' + websiteDataJson[i].aHref + '" target="' + websiteDataJson[i].aTarget + '" title="' + websiteDataJson[i].aTitle + '">' +
 					'<i class="' + websiteDataJson[i].iClass + '"></i>' +
 				'</a>' +
 			'</div>'

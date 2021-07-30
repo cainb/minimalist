@@ -1,4 +1,5 @@
 // Copyright © 2021 Cai Hai. All Rights Reserved.
+// Licensed under the MIT License. See LICENSE.md in the project root for license information.
 
 // 此文件存储页面可填充内容 json 数组化配置的所有 json 数组数据
 

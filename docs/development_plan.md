@@ -1,4 +1,7 @@
-<!-- Copyright © 2021 Cai Hai. All Rights Reserved. -->
+<!--
+    Copyright © 2021 Cai Hai. All Rights Reserved.
+    Licensed under the MIT License. See LICENSE.md in the project root for license information.
+-->
 
 # Minimalist | 极简开发计划
 
@@ -55,5 +58,5 @@
 - [x] 改进：一些细节上的修改
 - [x] 改进：完善 README 内容
 - [x] 新增：添加 MIT 开源许可证并开源
-- [ ] 改进：修正所有源码文件头部的版权信息
+- [x] 改进：修改所有源码文件头部的版权信息
 - [ ] 新增：添加一个简易的项目文档

@@ -1,4 +1,5 @@
 // Copyright © 2021 Cai Hai. All Rights Reserved.
+// Licensed under the MIT License. See LICENSE.md in the project root for license information.
 
 // 自定义右键菜单
 

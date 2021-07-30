@@ -526,8 +526,8 @@ $(document).ready(function() {
         customMenuConfig =
 			'<li>' +
 				'<a href="' + customMenuConfigJson[i].aHref + '" target="' + customMenuConfigJson[i].aTarget + '">' +
-					'<i class="' + customMenuConfigJson[i].iClass + '"></i>' +
-					' ' + customMenuConfigJson[i].aText +
+					'&nbsp;&nbsp;' + '<i class="' + customMenuConfigJson[i].iClass + '"></i>' +
+					'&nbsp;' + customMenuConfigJson[i].aText +
 				'</a>' +
 			'</li>'
 		$("#custom-menu").append(customMenuConfig)

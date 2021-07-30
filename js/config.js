@@ -31,7 +31,7 @@ var avatarDataJson = [
         // 属性
         'aTarget': '',
         // 图片链接
-        'imgSrc': 'img/development.png'
+        'imgSrc': 'img/minimalist-1.png'
     }
 ]
 
@@ -41,7 +41,7 @@ var avatarDataJson = [
 var logoDataJson = [
     {
         // 图片链接
-        'imgSrc': 'img/minimalist.png'
+        'imgSrc': 'img/minimalist-2.png'
     }
 ]
 

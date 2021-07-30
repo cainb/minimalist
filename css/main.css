@@ -619,19 +619,19 @@ li {
     color: var(--footer-color);
     font-size: 1.2rem;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
 }
 
-.footer a {
+.footer div a {
     text-decoration: none;
     color: var(--footer-color);
 }
 
-.footer a:hover {
+.footer div a:hover {
     text-decoration: underline;
 }
 
-.footer p {
-    margin: 1px;
+.footer div p {
+    margin: 0px;
 }

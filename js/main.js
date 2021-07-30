@@ -602,10 +602,31 @@ $(document).ready(function() {
 
 	// 页脚
 
-	var footerData = '';
-	for(var i = 0; i < footerDataJson.length; i++) {
-		footerData = 
-			'<p>' + footerDataJson[i].pText + '</p>'
-		$("#footer").append(footerData)
+	// 信息文本
+	var informationTextData = '';
+	for(var i = 0; i < informationTextDataJson.length; i++) {
+		informationTextData = 
+			'<p>' + informationTextDataJson[i].pText + '</p>'
+		$(".information-text").append(informationTextData)
+	}
+	// 版权信息文本
+	var copyrightInformationTextData = '';
+	var copyrightDate = new Date();
+	var copyrightCurrentYear = copyrightDate.getFullYear();
+	for(var i = 0; i < copyrightInformationTextDataJson.length; i++) {
+		var copyrightYear = copyrightInformationTextDataJson[i].pYear;
+	}
+	if(copyrightCurrentYear > copyrightYear) {
+		for(var i = 0; i < copyrightInformationTextDataJson.length; i++) {
+			copyrightInformationTextData = 
+				'<p>' + 'Copyright © ' + copyrightInformationTextDataJson[i].pYear + ' - ' + copyrightCurrentYear + ' <a href="' + copyrightInformationTextDataJson[i].aHref + '" target="' + copyrightInformationTextDataJson[i].aTarget + '">' + copyrightInformationTextDataJson[i].pOwner + '</a>. All Rights Reserved.</p>'
+			$(".copyright-information-text").append(copyrightInformationTextData)
+		}
+	} else {
+		for(var i = 0; i < copyrightInformationTextDataJson.length; i++) {
+			copyrightInformationTextData = 
+				'<p>' + 'Copyright © ' + copyrightInformationTextDataJson[i].pYear + ' <a href="' + copyrightInformationTextDataJson[i].aHref + '" target="' + copyrightInformationTextDataJson[i].aTarget + '">' + copyrightInformationTextDataJson[i].pOwner + '</a>. All Rights Reserved.</p>'
+			$(".copyright-information-text").append(copyrightInformationTextData)
+		}
 	}
 });

@@ -134,11 +134,31 @@ var searchEngineListDataJson = [
 ]
 
 // 页脚
-// 页脚可随意创建多个 json 对象，文本尽量简短
 
-var footerDataJson = [
+// 页脚 - 信息文本
+// 信息文本可随意创建多个 json 对象，文本尽量简短
+
+var informationTextDataJson = [
     {
         // 文本
-        'pText': 'Copyright © 2021 <a href="">Minimalist</a>. All Rights Reserved.'
+        'pText': ''
+    }
+]
+
+// 页脚 - 版权信息文本
+// 版权信息文本只允许创建一个 json 对象
+// 下方 json 数组中的年份配置项只需填写版权的起始年份，Minimalist 会自动处理版权的起始年份和最新 (当前) 年份
+// 下方 json 数组中 aTarget 名称的值为空则默认在当前窗口打开链接，填入 _blank 则在新窗口中打开链接
+
+var copyrightInformationTextDataJson = [
+    {
+        // 年份
+        'pYear': '2021',
+        // 拥有者
+        'pOwner': 'Minimalist',
+        // 拥有者链接
+        'aHref': 'https://github.com/cainb/minimalist',
+        // 属性
+        'aTarget': '_blank'
     }
 ]

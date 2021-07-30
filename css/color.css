@@ -39,7 +39,7 @@
     /* 信息卡片 - 头像背景 */
     --avatar-background-color: #fff;
     /* 信息卡片 - 头像边框 */
-    --avatar-border: #d4d4d4;
+    --avatar-border: #d4d4d400;
     /* 信息卡片 - 徽标背景 */
     --logo-background-color: #ffffff00;
     /* 信息卡片 - 个性签名文本 */
@@ -144,7 +144,7 @@
     /* 信息卡片 - 头像背景 */
     --avatar-background-color: #353535;
     /* 信息卡片 - 头像边框 */
-    --avatar-border: #b4b4b4;
+    --avatar-border: #b4b4b400;
     /* 信息卡片 - 徽标背景 */
     --logo-background-color: #35353500;
     /* 信息卡片 - 个性签名文本 */
@@ -244,7 +244,7 @@
     /* 信息卡片 - 头像背景 */
     --avatar-background-color: #353535;
     /* 信息卡片 - 头像边框 */
-    --avatar-border: #b4b4b4;
+    --avatar-border: #b4b4b400;
     /* 信息卡片 - 徽标背景 */
     --logo-background-color: #35353500;
     /* 信息卡片 - 个性签名文本 */

@@ -123,12 +123,16 @@ body {
 
 .light-dark-button .light {
     position: absolute;
+    top: 4px;
+    right: 8px;
     color: var(--light-color);
     font-size: 3.5rem;
 }
 
 .light-dark-button .dark {
     position: absolute;
+    top: 4px;
+    right: 8px;
     color: var(--dark-color);
     font-size: 3.5rem;
     transform:rotate(-120deg);

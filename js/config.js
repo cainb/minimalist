@@ -7,7 +7,7 @@
 // 图标使用的是 Bootstrap Icons v1.5.0，网址：https://icons.bootcss.com
 // 下方 json 数组中 aTarget 名称的值为空则默认在当前窗口打开链接，填入 _blank 则在新窗口中打开链接
 
-var customMenuDataJson = [
+var customMenuConfigJson = [
     {
         // 超链接
         'aHref': 'https://github.com/cainb/minimalist',
@@ -24,7 +24,7 @@ var customMenuDataJson = [
 // 头像只允许创建一个 json 对象
 // 下方 json 数组中 aTarget 名称的值为空则默认在当前窗口打开链接，填入 _blank 则在新窗口中打开链接
 
-var avatarDataJson = [
+var avatarConfigJson = [
     {
         // 超链接
         'aHref': '/',
@@ -36,9 +36,9 @@ var avatarDataJson = [
 ]
 
 // 徽标
-// 徽标只允许创建一个 json 对象，推荐图片尺寸：200 * 65
+// 徽标只允许创建一个 json 对象，推荐图片尺寸：200 * 65 (长度不能超过 300px，高度固定 65px)
 
-var logoDataJson = [
+var logoConfigJson = [
     {
         // 图片链接
         'imgSrc': 'img/minimalist-2.png'
@@ -48,7 +48,7 @@ var logoDataJson = [
 // 个性签名
 // 个性签名只允许创建一个 json 对象，文本尽量简短
 
-var signatureDataJson = [
+var signatureConfigJson = [
     {
         // 文本
         'pText': '永远保持理智选择和接受坏事的心态'
@@ -60,16 +60,16 @@ var signatureDataJson = [
 // 图标使用的是 Bootstrap Icons v1.5.0，网址：https://icons.bootcss.com
 // 下方 json 数组中 aTarget 名称的值为空则默认在当前窗口打开链接，填入 _blank 则在新窗口中打开链接
 
-var websiteDataJson = [
+var websiteConfigJson = [
     {
         // 超链接
-        'aHref': '',
+        'aHref': 'https://github.com/cainb/minimalist',
         // 属性
-        'aTarget': '',
+        'aTarget': '_blank',
         // 超链接提示文本
         'aTitle': 'Minimalist',
         // 图标
-        'iClass': 'bi bi-house'
+        'iClass': 'bi bi-github'
     }
 ]
 
@@ -86,10 +86,10 @@ var websiteDataJson = [
 // 聚合搜索 - 默认搜索引擎
 // 默认搜索引擎只允许创建一个 json 对象
 
-var searchBoxDataJson = [
+var searchBoxConfigJson = [
     {
         // 链接
-        'formAcrion': 'https://cn.bing.com/search',
+        'formAction': 'https://cn.bing.com/search',
         // 图标
         'imgSrc': 'img/bing.png',
         // 参数
@@ -100,7 +100,7 @@ var searchBoxDataJson = [
 // 聚合搜索 - 搜索引擎列表
 // 搜索引擎列表可随意创建多个 json 对象，文本尽量简短，超出部分会以省略号显示
 
-var searchEngineListDataJson = [
+var searchEngineListConfigJson = [
     {
         // 链接
         'liUrl': 'https://cn.bing.com/search',
@@ -138,7 +138,7 @@ var searchEngineListDataJson = [
 // 页脚 - 信息文本
 // 信息文本可随意创建多个 json 对象，文本尽量简短
 
-var informationTextDataJson = [
+var informationTextConfigJson = [
     {
         // 文本
         'pText': ''
@@ -150,7 +150,7 @@ var informationTextDataJson = [
 // 下方 json 数组中的年份配置项只需填写版权的起始年份，Minimalist 会自动处理版权的起始年份和最新 (当前) 年份
 // 下方 json 数组中 aTarget 名称的值为空则默认在当前窗口打开链接，填入 _blank 则在新窗口中打开链接
 
-var copyrightInformationTextDataJson = [
+var copyrightInformationTextConfigJson = [
     {
         // 年份
         'pYear': '2021',

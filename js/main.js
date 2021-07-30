@@ -42,7 +42,7 @@ $(document).ready(function () {
 		var aw, ah;
 		aw = 150;
 		ah = 0;
-		for(var i = 0; i < customMenuDataJson.length; i++) {
+		for(var i = 0; i < customMenuConfigJson.length; i++) {
 			ah++;
 		}
 		// 获取自定义右键菜单
@@ -112,7 +112,7 @@ $(document).ready(function () {
 		const darkModeStorageKey = "user-color-scheme"; // 作为 localStorage 的 key
 		const darkModeMediaQueryKey = "--color-mode";
 		const rootElementDarkModeAttributeName = "data-user-color-scheme";
-		const darkModeToggleBottonElement = document.getElementById("light-dark-button");
+		const darkModeToggleBottomElement = document.getElementById("light-dark-button");
 
 		const setLS = (k, v) => {
 			try {
@@ -195,7 +195,7 @@ $(document).ready(function () {
 		// 当页面加载时，将显示模式设置为 localStorage 中自定义的值（如果有的话）
 		applyCustomDarkModeSettings();
 
-		darkModeToggleBottonElement.addEventListener("click", () => {
+		darkModeToggleBottomElement.addEventListener("click", () => {
 			// 当用户点击「按钮」时，获得新的显示模式、写入 localStorage、并在页面上生效
 			applyCustomDarkModeSettings(toggleCustomDarkMode());
 		});
@@ -228,7 +228,7 @@ $(document).ready(function () {
 // 常用站点 - 水平滚动
 
 $(function () {
-	var websiteLength = websiteDataJson.length;
+	var websiteLength = websiteConfigJson.length;
 	if(websiteLength < 5){
 		$(".website").css('justify-content','center')
 	}
@@ -520,113 +520,113 @@ $(document).ready(function() {
 
 	// 可自定义菜单项
 
-	var customMenuData = '';
-    for(var i = 0; i < customMenuDataJson.length; i++) {
-        customMenuData =
+	var customMenuConfig = '';
+    for(var i = 0; i < customMenuConfigJson.length; i++) {
+        customMenuConfig =
 			'<li>' +
-				'<a href="' + customMenuDataJson[i].aHref + '" target="' + customMenuDataJson[i].aTarget + '">' +
-					'<i class="' + customMenuDataJson[i].iClass + '"></i>' +
-					' ' + customMenuDataJson[i].aText +
+				'<a href="' + customMenuConfigJson[i].aHref + '" target="' + customMenuConfigJson[i].aTarget + '">' +
+					'<i class="' + customMenuConfigJson[i].iClass + '"></i>' +
+					' ' + customMenuConfigJson[i].aText +
 				'</a>' +
 			'</li>'
-		$("#custom-menu").append(customMenuData)
+		$("#custom-menu").append(customMenuConfig)
     }
 
 	// 头像
 
-    var avatarData = '';
-    for(var i = 0; i < avatarDataJson.length; i++) {
-        avatarData =
-			'<a href="' + avatarDataJson[i].aHref + '" target="' + avatarDataJson[i].aTarget + '">' +
-				'<img src="' + avatarDataJson[i].imgSrc + '">' +
+    var avatarConfig = '';
+    for(var i = 0; i < avatarConfigJson.length; i++) {
+        avatarConfig =
+			'<a href="' + avatarConfigJson[i].aHref + '" target="' + avatarConfigJson[i].aTarget + '">' +
+				'<img src="' + avatarConfigJson[i].imgSrc + '">' +
 			'</a>'
-		$("#avatar").append(avatarData)
+		$("#avatar").append(avatarConfig)
     }
 
 	// logo 图标
 
-	var logoData = '';
-	for(var i = 0; i < logoDataJson.length; i++) {
-        logoData =
-			'<img src="' + logoDataJson[i].imgSrc + '">'
-		$("#logo").append(logoData)
+	var logoConfig = '';
+	for(var i = 0; i < logoConfigJson.length; i++) {
+        logoConfig =
+			'<img src="' + logoConfigJson[i].imgSrc + '">'
+		$("#logo").append(logoConfig)
     }
 
 	// 个性签名
 
-	var signatureData = '';
-	for(var i = 0; i < signatureDataJson.length; i++) {
-		signatureData = 
-			'<p>' + signatureDataJson[i].pText + '</p>'
-		$("#signature").append(signatureData)
+	var signatureConfig = '';
+	for(var i = 0; i < signatureConfigJson.length; i++) {
+		signatureConfig = 
+			'<p>' + signatureConfigJson[i].pText + '</p>'
+		$("#signature").append(signatureConfig)
 	}
 
 	// 常用站点
 
-	var websiteData = '';
-	for(var i = 0; i < websiteDataJson.length; i++) {
-		websiteData = 
+	var websiteConfig = '';
+	for(var i = 0; i < websiteConfigJson.length; i++) {
+		websiteConfig = 
 			'<div class="website-box">' +
-				'<a href="' + websiteDataJson[i].aHref + '" target="' + websiteDataJson[i].aTarget + '" title="' + websiteDataJson[i].aTitle + '">' +
-					'<i class="' + websiteDataJson[i].iClass + '"></i>' +
+				'<a href="' + websiteConfigJson[i].aHref + '" target="' + websiteConfigJson[i].aTarget + '" title="' + websiteConfigJson[i].aTitle + '">' +
+					'<i class="' + websiteConfigJson[i].iClass + '"></i>' +
 				'</a>' +
 			'</div>'
-		$("#website").append(websiteData)
+		$("#website").append(websiteConfig)
 	}
 
 	// 聚合搜索
 
 	// 默认搜索引擎
-	var searchBoxData = '';
-	for(var i = 0; i < searchBoxDataJson.length; i++) {
-		searchBoxData =
-			'<form class="search" action="' + searchBoxDataJson[i].formAcrion + '" target="_blank">' +
-				'<img class="se" src="' + searchBoxDataJson[i].imgSrc + '">' +
-				'<input class="wd" type="text" name="' + searchBoxDataJson[i].inputName + '" placeholder="快来搜一下吧 ^-^">' +
+	var searchBoxConfig = '';
+	for(var i = 0; i < searchBoxConfigJson.length; i++) {
+		searchBoxConfig =
+			'<form class="search" action="' + searchBoxConfigJson[i].formAction + '" target="_blank">' +
+				'<img class="se" src="' + searchBoxConfigJson[i].imgSrc + '">' +
+				'<input class="wd" type="text" name="' + searchBoxConfigJson[i].inputName + '" placeholder="快来搜一下吧 ^-^">' +
 				'<button class="s">' +
 					'<i class="bi bi-search"></i>' +
 				'</button>' +
 			'</form>'
-		$("#search-box").append(searchBoxData)
+		$("#search-box").append(searchBoxConfig)
 	}
 	// 搜索引擎列表
-	var searchEngineListData = '';
-	for(var i = 0; i < searchEngineListDataJson.length; i++) {
-		searchEngineListData = 
-			'<li class="se-li" url="' + searchEngineListDataJson[i].liUrl + '" name="' + searchEngineListDataJson[i].liName + '" img="' + searchEngineListDataJson[i].liImgSrc + '">' +
-				'<img src="' + searchEngineListDataJson[i].liImgSrc + '">' +
-					searchEngineListDataJson[i].liText +
+	var searchEngineListConfig = '';
+	for(var i = 0; i < searchEngineListConfigJson.length; i++) {
+		searchEngineListConfig = 
+			'<li class="se-li" url="' + searchEngineListConfigJson[i].liUrl + '" name="' + searchEngineListConfigJson[i].liName + '" img="' + searchEngineListConfigJson[i].liImgSrc + '">' +
+				'<img src="' + searchEngineListConfigJson[i].liImgSrc + '">' +
+					searchEngineListConfigJson[i].liText +
 			'</li>'
-		$("#search-engine-list").append(searchEngineListData)
+		$("#search-engine-list").append(searchEngineListConfig)
 	}
 
 	// 页脚
 
 	// 信息文本
-	var informationTextData = '';
-	for(var i = 0; i < informationTextDataJson.length; i++) {
-		informationTextData = 
-			'<p>' + informationTextDataJson[i].pText + '</p>'
-		$(".information-text").append(informationTextData)
+	var informationTextConfig = '';
+	for(var i = 0; i < informationTextConfigJson.length; i++) {
+		informationTextConfig = 
+			'<p>' + informationTextConfigJson[i].pText + '</p>'
+		$(".information-text").append(informationTextConfig)
 	}
 	// 版权信息文本
-	var copyrightInformationTextData = '';
+	var copyrightInformationTextConfig = '';
 	var copyrightDate = new Date();
 	var copyrightCurrentYear = copyrightDate.getFullYear();
-	for(var i = 0; i < copyrightInformationTextDataJson.length; i++) {
-		var copyrightYear = copyrightInformationTextDataJson[i].pYear;
+	for(var i = 0; i < copyrightInformationTextConfigJson.length; i++) {
+		var copyrightYear = copyrightInformationTextConfigJson[i].pYear;
 	}
 	if(copyrightCurrentYear > copyrightYear) {
-		for(var i = 0; i < copyrightInformationTextDataJson.length; i++) {
-			copyrightInformationTextData = 
-				'<p>' + 'Copyright © ' + copyrightInformationTextDataJson[i].pYear + ' - ' + copyrightCurrentYear + ' <a href="' + copyrightInformationTextDataJson[i].aHref + '" target="' + copyrightInformationTextDataJson[i].aTarget + '">' + copyrightInformationTextDataJson[i].pOwner + '</a>. All Rights Reserved.</p>'
-			$(".copyright-information-text").append(copyrightInformationTextData)
+		for(var i = 0; i < copyrightInformationTextConfigJson.length; i++) {
+			copyrightInformationTextConfig = 
+				'<p>' + 'Copyright © ' + copyrightInformationTextConfigJson[i].pYear + ' - ' + copyrightCurrentYear + ' <a href="' + copyrightInformationTextConfigJson[i].aHref + '" target="' + copyrightInformationTextConfigJson[i].aTarget + '">' + copyrightInformationTextConfigJson[i].pOwner + '</a>. All Rights Reserved.</p>'
+			$(".copyright-information-text").append(copyrightInformationTextConfig)
 		}
 	} else {
-		for(var i = 0; i < copyrightInformationTextDataJson.length; i++) {
-			copyrightInformationTextData = 
-				'<p>' + 'Copyright © ' + copyrightInformationTextDataJson[i].pYear + ' <a href="' + copyrightInformationTextDataJson[i].aHref + '" target="' + copyrightInformationTextDataJson[i].aTarget + '">' + copyrightInformationTextDataJson[i].pOwner + '</a>. All Rights Reserved.</p>'
-			$(".copyright-information-text").append(copyrightInformationTextData)
+		for(var i = 0; i < copyrightInformationTextConfigJson.length; i++) {
+			copyrightInformationTextConfig = 
+				'<p>' + 'Copyright © ' + copyrightInformationTextConfigJson[i].pYear + ' <a href="' + copyrightInformationTextConfigJson[i].aHref + '" target="' + copyrightInformationTextConfigJson[i].aTarget + '">' + copyrightInformationTextConfigJson[i].pOwner + '</a>. All Rights Reserved.</p>'
+			$(".copyright-information-text").append(copyrightInformationTextConfig)
 		}
 	}
 });
